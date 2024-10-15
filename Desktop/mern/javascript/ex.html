@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+class Animal {
+  
+  constructor(name, age, color, legs) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+    this.legs = legs;
+  }
+
+
+  displayInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Color: ${this.color}, Legs: ${this.legs}`);
+  }
+
+  makeSound(sound) {
+    console.log(`${this.name} makes a sound: ${sound}`);
+  }
+
+  
+  move() {
+    console.log(`${this.name} is moving on its ${this.legs} legs.`);
+  }
+
+  
+  updateAge(newAge) {
+    this.age = newAge;
+    console.log(`${this.name} is now ${this.age} years old.`);
+  }
+}
+
+
+const dog = new Animal('Buddy', 5, 'brown', 4);
+
+
+dog.displayInfo();  
+dog.makeSound('bark');  
+dog.move();  
+dog.updateAge(6);  
+
+    </script>
+</body>
+</html>

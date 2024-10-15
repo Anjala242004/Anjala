@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Query Selector All</title>
+</head>
+<body>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+    <p>This is the fourth paragraph.</p>
+
+    <script>
+        
+        const paragraphs = document.querySelectorAll('p');
+        
+        console.log(paragraphs);
+
+        paragraphs.forEach((paragraph, index) => {
+            console.log(`Paragraph ${index + 1}:`, paragraph);
+        });
+    </script>
+</body>
+</html>

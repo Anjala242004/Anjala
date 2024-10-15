@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const constants = [2.72, 3.14, 9.81, 37, 100]
+        const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+        const rectangle = {
+        width: 20,
+        height: 10,
+        area: 200,
+        perimeter: 60
+        }
+        const users = [
+        {
+        name:'Brook',
+        scores:75,
+        skills:['HTM', 'CSS', 'JS'],
+        age:16
+        },
+        {
+        name:'Alex',
+        scores:80,
+        skills:['HTM', 'CSS', 'JS'],
+        age:18
+        },
+        {
+        name:'David',
+        scores:75,
+        skills:['HTM', 'CSS'],
+        age:22
+        },
+        {
+        name:'John',
+        scores:85,
+        skills:['HTML'],
+        age:25
+        },
+        {
+        name:'Sara',
+        scores:95,
+        skills:['HTM', 'CSS', 'JS'],
+        age: 26
+        },
+        {
+        name:'Martha',
+        scores:80,
+        skills:['HTM', 'CSS', 'JS'],
+        age:18
+        },
+        {
+        name:'Thomas',
+        scores:90,
+        skills:['HTM', 'CSS', 'JS'],
+        age:20
+        }
+        ]
+        const [e, pi, gravity, humanBodyTemp, waterBoilingTemp] = constants;
+        console.log(e);                
+        console.log(pi);               
+        console.log(gravity);          
+        console.log(humanBodyTemp);    
+        console.log(waterBoilingTemp);
+
+        const [fin, est, sw, den, nor] = countries;
+
+        console.log(fin);  
+        console.log(est);  
+        console.log(sw);   
+        console.log(den);  
+        console.log(nor); 
+
+        const rect={
+            width:20,
+            height:10,
+            color:'black'
+        };
+       /*const{width,height,color}=rect
+        console.log(width,height,color)
+
+        users.forEach(users => {
+        const keys = Object.keys(users);
+        console.log(keys);
+        });*/
+
+        const love=users.filter(users=>users.skills.length<2);
+        console.log(love)
+
+        const count=[
+            {name;ANJANA;
+             
+            }
+        ]
+
+    </script>
+</body>
+</html>

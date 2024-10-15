@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* function name(){
+            console.log('Anjana kr')
+        }name()
+
+         function pt(){
+            let firstname='ANJANA'
+            let lastname='K R'
+            let spac=' '
+            let l=firstname+spac+lastname
+            console.log(l)
+           }
+           pt()
+
+           function add()
+           {
+            let one=44
+            let two=77
+            let sum=one+two
+            console.log(sum)
+           }
+           add()
+
+           function areaofrectangle()
+           {
+            let length=4
+            let width=7
+            let area=length*width
+            console.log(area)
+           }
+           areaofrectangle()
+
+           function perimeterOfRectangle()
+           {
+            let length=4
+            let width=7
+            let perimeter= 2*(length+width)
+            console.log(perimeter)
+           }
+           perimeterOfRectangle()
+
+
+           function volumeOfRectPrism()
+           {
+            let length=4
+            let width=7
+            let height=8
+            let volume= length*width*height
+            console.log(volume)
+           }
+           volumeOfRectPrism()
+
+           function area(r){
+                let area=Math.PI * r * r
+                return area
+             }
+             console.log(area(7))
+
+            function circumOfCircle(ra){
+                let circumference=Math.PI*2*ra
+                return circumference
+
+            }console.log(circumOfCircle(4))
+            
+            function density(){
+                let mass=8
+                let volume=10
+                let densit=mass/volume
+                console.log(densit)
+            }density()
+
+            function speed(){
+                let dista=20
+                let time=40
+                let spee=dista/time
+                console.log(spee)
+            }speed()
+
+            function weight(){
+                let mas=18
+                let gravity=19
+                let densit=mas/gravity
+                console.log(densit)
+            }weight()
+
+            function CelsiusToFahrenheit(){
+                let c=42
+                let f=((c*9/5)+32)
+                return f
+            }console.log(CelsiusToFahrenheit())
+
+            function bmi()
+            {
+                let weigh=47
+                let height=157
+                let bm=weight/(height*height)
+
+                if(bm<=18.5)
+                {
+                        console.log('body mass indes is underweight')
+                }
+                else(bm>=18.5||bm<=24.9)
+                {
+                        console.log('body is normal weight')
+                }
+                return bm
+            }console.log(bmi())*/
+
+            function checkSeason(month) {
+                    month = month.toLowerCase();
+                    switch (month) {
+                        case 'december':
+                        case 'january':
+                        case 'february':
+                            return 'Winter';
+                        case 'march':
+                        case 'april':
+                        case 'may':
+                            return 'Spring';
+                        case 'june':
+                        case 'july':
+                        case 'august':
+                            return 'Summer';
+                        case 'september':
+                        case 'october':
+                        case 'november':
+                            return 'Autumn';
+                        default:
+                            return 'Invalid month';
+                    
+                        }
+                   }
+                console.log(checkSeason('August'));
+                console.log(checkSeason('november')); 
+                console.log(checkSeason('January')); 
+                console.log(checkSeason('July')); 
+
+                function solveLinEquation(){
+                    let a
+                }
+
+                function findmax(a,b,c){
+                    let max=(a>b)? a:b
+                    let maxc=max<c?max:c
+                    return max
+                }console.log(findmax(3,4,0))
+        
+                function solveLinEquation(a,x,b,y,c)
+                {
+                    let linear= a * x + b * y +c
+                    return linear
+                }console.log(solveLinEquation(2,3,4,5,6))
+
+
+                function printarray(array){
+                    
+                    return array
+
+                }console.log(printarray([1,2,3,4,5]))
+
+                function  showDateTime(){
+                    let date =new Date()
+                    return date
+                }console.log(showDateTime())
+
+                function swap(x,y){
+                    var t = x;
+                    x = y;
+                    y = t;
+                    
+                    return t= y
+                    }
+
+                 console.log(swap(2,3));
+    </script>
+</body>
+</html>

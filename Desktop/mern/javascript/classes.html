@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person {
+            constructor(firstName,lastName){
+                console.log(this)
+                this.firstName=firstName
+                this.lastName=lastName
+            }
+        }
+        const personss=new person()
+        console.log(person)
+
+        class persons {
+            constructor(firstName,lastName){
+                console.log(this)
+                this.firstName=firstName
+                this.lastName=lastName
+            }
+        }
+        const personsss=new persons('Anjana','Anjali')
+        console.log(personsss)
+
+        class per{
+        Constructor(firstName,lastName){
+            console.log(this)
+            this.firstName = firstName
+            this.lastName = lastName
+        }
+    }
+    const person1=new person('Anjana','Anjali')
+    const person2=new person('Anjala','nayika')
+    const person3=new person('rasika','raveena')
+    console.log(person1)
+    console.log(person2)
+    console.log(person3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  class Student extends Person {
+  saySomething() {
+    console.log('I am a child of the person class')
+    }
+    }
+
+    const s1 = new Student('Asabeneh', 'Yetayeh', 'Finland', 250, 'Helsinki')
+    console.log(s1)
+    console.log(s1.saySomething())
+    console.log(s1.getFullName())
+    console.log(s1.getPersonInfo())
+
+    </script>
+</body>
+</html>

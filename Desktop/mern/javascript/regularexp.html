@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        //period 
+        /*let pattern = /[a]./g  
+        let txt = 'Apple and banana are fruits'
+        let matches = txt.match(pattern)
+        console.log(matches) 
+
+        const patter= /[a].+/g  
+        const tx = 'Apple and banana are fruits'
+        const matche = txt.match(patter)
+        console.log(matche) 
+        
+        
+        const patte = /[a].*/
+        //const tt = 'Apple and banana are fruits'
+        //const match = txt.match(patte)
+        //console.log(match) 
+
+        /*const txtt = 'I am not sure if there is a convention how to write the word e-mail.\
+                   Some people write it email others may write it as Email or E-mail.'
+        const pa=/[Ee]-?mail/g
+        matchess=txtt.match(pa)
+        console.log(matchess)*/
+
+
+        //quantifier in regexp
+        /*const main='This regular expression example was made in December 6,  2019.'
+        const love=/\ b\w{4}\b/g
+        const hey=main.match(love)
+        console.log(hey)
+
+        const mai='This regular expression example was made in December 6,  2019.'
+        const lov=/\b[a-zA-Z]{4}\b/g
+        const he=mai.match(lov)
+        console.log(he)
+
+        const txt = 'This regular expression example was made in December 6,  2019.'
+        const pattern = /\d{4}/g  
+        const matches = txt.match(pattern)
+        console.log(matches)  
+
+         
+        const tt = 'This regular expression example was made in December 6,  2019.'
+        const patter = /\d{1,4}/g   
+        const matche = tt.match(patter)
+        console.log(matche) 
+
+
+        const txt = 'This regular expression example was made in December 6,  2019.'
+        const pattern = /^This/
+        const matches = txt.match(pattern)
+        console.log(matches)*/
+        
+        const txt = 'This regular expression example was made in December 6,  2019.'
+        const pattern = /[^A-Za-z,. ]+/g  
+        const matches = txt.match(pattern)
+        console.log(matches)
+
+        let mai=/^[A-Z][a-z]{3,12}$/;
+        let name='Anjana';
+        console.log(mai.test(name))
+
+        
+    </script>
+</body>
+</html>

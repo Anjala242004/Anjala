@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*function outerFunction() {
+    let count = 5;
+    function innerFunction() {
+        count++
+        return count
+    }
+
+    return innerFunction
+    }
+    const innerFunc = outerFunction()
+
+    console.log(innerFunc())
+    console.log(innerFunc())
+    console.log(innerFunc())
+    function name(){
+        name='anjana'
+        function one(){
+            name='anj'
+            return name
+        }
+        function two(){
+            name='nj'
+            return name
+        }
+        function three(){
+            name='kswkk'
+            return name
+        }
+        return{one:one(),two:two(),three:three()}
+    }
+    const inner=name()
+    console.log(inner.one)
+    console.log(inner.two)
+    console.log(inner.three)*/
+
+
+    function personAccount(firstname, lastname) {
+  let incomes = [];
+  let expenses = [];
+
+  return {
+ 
+    accountInfo: function() {
+      return `Name: ${firstname} ${lastname}\nTotal Income: $${this.totalIncome()}\nTotal Expenses: $${this.totalExpense()}\nAccount Balance: $${this.accountBalance()}`;
+    },
+
+    addIncome: function(amount, description) {
+      incomes.push({ amount: amount, description: description });
+    },
+
+    addExpense: function(amount, description) {
+      expenses.push({ amount: amount, description: description });
+    },
+
+    totalIncome: function() {
+      return incomes.reduce((total, income) => total + income.amount, 0);
+    },
+    totalExpense: function() {
+      return expenses.reduce((total, expense) => total + expense.amount, 0);
+    },
+
+    accountBalance: function() {
+      return this.totalIncome() - this.totalExpense();
+    }
+  };
+}
+
+
+const myAccount = personAccount("John", "Doe");
+
+
+myAccount.addIncome(5000, "Salary");
+myAccount.addIncome(200, "Freelance work");
+
+
+myAccount.addExpense(1000, "Rent");
+myAccount.addExpense(300, "Groceries");
+
+
+console.log(myAccount.accountInfo());
+
+    </script>
+</body>
+</html>

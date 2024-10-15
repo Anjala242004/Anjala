@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //collection of elements
+    /*let comp=new Set()
+    console.log(comp)
+
+    let lang=['ENGLISH','FINNISH','FRENCH','SPANISH','ENGLISH','FRENCH','ENGLISH','KOREAN']
+    let setOfLanguages =new Set(lang)
+    console.log(setOfLanguages)
+
+
+    let langu=['ENGLISH','FINNISH','FRENCH','SPANISH','ENGLISH','FRENCH','ENGLISH','KOREAN']
+    let languages=new Set(langu)
+    for(let langu of languages){
+        console.log(langu)
+    }
+
+    let com=new Set()
+    console.log(com)
+
+    com.add('GOOGLE')
+    com.add('facebook')
+    com.add('amazon')
+    com.add('oracle')
+    com.add('microsoft')
+    console.log(com.size)
+    console.log(com)
+
+    console.log(com.delete('GOOGLE'))
+    console.log(com.size)
+    
+    console.log(comp.has('Apple'))
+    console.log(comp.has('Facebook')) 
+
+    comp.clear()
+    console.log(comp)
+
+    const languages=['English',
+                    'Finnish',
+                    'English',
+                    'French',
+                    'Spanish',
+                    'English',
+                    'French',
+                ]
+            const langSet=new Set(languages)
+            console.log(langSet)
+            console.log(langSet.size)
+            const counts=[]
+            const count={}
+            for(const l of langSet){
+                const filtered=languages.filter((lng) => lng === l)
+                console.log(filtered)
+                counts.push({lang:l,count:filtered.length})
+            }console.log(counts)
+
+            //union of sets
+            let a=[1,2,3,4,5,6]
+            let b=[3,4,5,6]
+            let c=[...a, ...b]
+            let A=new Set(a)
+            let B=new Set(b)
+            let C=new Set(c)
+            console.log(C)*
+
+            let a=[1,2,3,4,5]
+            let b=[3,4,5,6]
+            let A=new Set(a)
+            let B=new Set(b)
+            let c=a.filter((num)=>B.has(num))
+            let C=new Set(c)
+            console.log(c)*/
+            let a = [1, 2, 3, 4, 5]
+            let b = [3, 4, 5, 6]
+
+            let A = new Set(a)
+            let B = new Set(b)
+
+            let c = a.filter((num) => !B.has(num))
+            let C = new Set(c)
+
+            console.log(C)
+   </script>
+</body>
+</html>

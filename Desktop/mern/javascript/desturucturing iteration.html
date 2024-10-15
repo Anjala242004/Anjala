@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const countries = [['India', 'newdelhi'], ['Sweden', 'Stockholm'], ['Norway', 'Oslo']]
+        for (const [country, city] of countries)
+        {
+             console.log(country, city)
+        }
+        const fullstack=[['HTML','CSS','JS','REACT'],
+                         ['Node','Express','MongoDB']
+                        ]
+                        for(const[first,second,third]of fullstack){
+                            console.log(first,second,third)
+                        }
+
+        //destructuring object
+        /*const rectangle={width:20,
+            height:10,
+            area:200
+        }
+        let { width,height,area,perimeter }=rectangle
+        console.log(width,height,area,perimeter)
+
+        const rectangl={width:20,
+            height:10,
+            area:200
+        }
+        let { width:w,height:h,area:a,perimeter:p }=rectangl
+        console.log(w,h,a,p)*/
+        const rectangle = {
+            height: 10,
+            area: 200
+            }
+            let { width=40, height, area, perimeter = 100 } = rectangle
+
+            console.log(width, height, area, perimeter) 
+
+            const rect = {
+                width: 20,
+                height: 10
+                }
+                const calculatePerimeter = rectangle => {
+                return 2 * (rectangle.width + rectangle.height)
+                }
+
+                console.log(calculatePerimeter(rect))
+
+            
+            const person = {
+            firstName: 'Anjana',
+            lastName: 'kr',
+            age: 20,
+            country: 'India',
+            job: 'web Developer',
+            skills: [
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'React',
+                'Redux',
+                'Node',
+                'MongoDB',
+                'Python',
+                'D3.js'
+            ],
+            languages: ['french', 'English', 'thay']
+            }
+            const getPersonInfo = obj => {
+            const skills = obj.skills
+            const formattedSkills = skills.slice(0, -1).join(', ')
+            const languages = obj.languages
+            const formattedLanguages = languages.slice(0, -1).join(', ')
+
+            personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. she is  ${
+                obj.age
+            } years old. she is an ${obj.job}. she teaches ${formattedSkills} and ${
+                skills[skills.length - 1]
+            }. she speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
+
+            return personInfo
+            }
+
+            console.log(getPersonInfo(person))
+
+            //Destructuring object during iteration
+            const todolist=[
+                {
+                    task:'Prepare JS Test',
+                    time:'4/1/2020 8:30',
+                    completed:true
+                },
+                {
+                    task:'give JS Test',
+                    time:'4/1/2020 10:00',
+                    completed:false
+                },
+                {
+                    task:'Assess JS Test',
+                    time:'4/1/2020 8:30',
+                    completed:false
+                }
+            ]
+                for(const{task,time,completed}of todolist){
+                    console.log(task,time,completed)
+                }
+
+            const cont=['Germany','France','Belgium','Finland','Sweden','Norway','Denmark','Iceland']
+            let[gem,fra, ,...rest]=cont
+            console.log(gem)
+            console.log(fra)
+            console.log(rest)
+
+            const evens=[0,2,4,6,8,10]
+            const evenNumbers=[...evens]
+            const odds=[1,3,5,7,9]
+            const oddNumbers=[...odds]
+            const wholeNumbers=[...evens,...odds]
+            console.log(evenNumbers)
+            console.log(oddNumbers)
+            console.log(wholeNumbers)
+
+            const user={name:'anjana',
+                title:'developer',
+                country:'america',
+                city:'Helsinki'
+            }
+            const copiedUser ={...user}
+            console.log(copiedUser)
+            
+
+            const us={
+                name:'Anjana',
+                title:'programmer',
+                country:'America',
+                city:'plaza'
+            }
+            const cop={...user,title:'developer'}
+            console.log(cop)
+
+           // Spread operator with arrow function
+           const sumallnums=(...args)=>{
+            console.log(args)
+           }
+           sumallnums(1,2,3,4,5)
+
+           const sumallnum=(...args)=>{
+            let sum=0
+            for(const num of args){
+                sum +=num
+           }
+           return sum
+           }
+           console.log(sumallnum(1,2,3,4,5) )
+
+</script>
+</body>
+</html>

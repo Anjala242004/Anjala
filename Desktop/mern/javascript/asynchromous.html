@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*function countdown(seconds){
+            console.log(`starting countdown for ${seconds}seconds...`);
+            let timer =setInterval(function(){
+                seconds--;
+                if(seconds<=0){
+                    clearInterval(timer);
+                    console.log('countdown completed!')
+                }else{
+                    console.log(`${seconds}seconds remaining...`);
+                }
+            },1000);
+        }countdown(100)*/
+        const url = 'https://restcountries.com/v2/all'
+        fetch(url)
+        .then(response => response.json()) 
+        .then(data => {
+         console.log(data)
+        })
+        .catch(error=>console.error(error))
+
+    </script>
+</body>
+</html>

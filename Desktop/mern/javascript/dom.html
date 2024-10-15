@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+     <h1 class='title' id='first-title'>First Title</h1>
+     <h1 class='title' id='second-title'>Second Title</h1>
+     <h1 class='title' id='third-title'>Third Title</h1>
+     <h1></h1>
+     <script>
+        const allTitles = document.getElementsByTagName('h1')
+
+    console.log(allTitles) 
+    console.log(allTitles.length) 
+
+    for (let i = 0; i < allTitles.length; i++) {
+    console.log(allTitles[i]) 
+    }
+
+    const allTitle = document.getElementsByClassName('title')
+
+console.log(allTitle) 
+console.log(allTitle.length)
+
+for (let i = 0; i < allTitle.length; i++) {
+  console.log(allTitles[i]) }
+
+  let firstTitle=document.getElementById('first-title')
+  console.log(firstTitle)
+
+  const alltitles=document.querySelectorAll('h1')
+        console.log(alltitles.length)
+        for(let i=0;i<alltitles.length;i++){
+            console.log(alltitles[i])
+        }
+        alltitles.forEach(title=>console.log(title))
+        const allttitles = document.querySelectorAll('.title') 
+        
+        const titles = document.querySelectorAll('h1')
+        titles[3].setAttribute('class', 'title')
+        titles[3].setAttribute('id', 'fourth-title')
+        console.log(titles)
+
+        titilees[3].classList.add('title','header-title')
+        console.log(titlees)
+
+        //Adding Text to HTML element
+        const ti =document.querySelectorAll('h1')
+        ti[3].textContent='fourth titile'
+        console.log(ti)
+
+        
+    
+</script>
+</body>
+</html>

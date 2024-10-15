@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[ ]
+        console.log(num)
+        let no=[0,3.14,9.18,77,100,200]
+        console.log(no.length)
+        let sky=['cloudy','sunny','rainy']
+        console.log(sky.length)
+
+        const arr=[
+            'Anjana',
+            20,
+            true,
+            {country:'india',city:'thrisur'},
+            {skills:['html','css','javascript','java']
+
+            }
+        ]
+         console.log(arr)
+
+        let bh='my name is anjana kr'
+        console.log(bh.split(' '))
+        
+        let string='blue,black,red,white,yellow,grey,olive'
+        console.log(string.split(' '))
+
+        let fruits=['banana','kiwi','mango','cherry']
+        console.log(fruits[0])
+        console.log(fruits[1])
+        console.log(fruits[2])
+        console.log(fruits[3])
+        let fruit=fruits.length-1
+        console.log(fruits[fruit])
+
+        let sub=[ 
+            'HTML',
+            'CSS',
+            'JAVA',
+            'MONGODB',
+            'JAVASCRIPT',
+            'REACT',
+            'NODE.JS'
+        ]
+         console.log(sub)
+         console.log(sub.length)
+         console.log(sub[0])
+         console.log(sub[5])
+         console.log(sub[1])
+
+
+         let n=[1,2,3,5,7]
+         n[0]=10
+         n[1]=20
+         console.log(n)
+
+        let world=['America','Paris','Canada','finland','South Korea','Germany']
+        console.log(world)
+        console.log(world[0])
+        world[1]='india'
+        console.log(world)
+
+        let ar =Array()
+        console.log(ar)
+
+        let main=Array(8).fill('X')
+        console.log(main)
+
+        let fir=['anjana','nandana']
+        let se=['mayukha','shiya']
+        console.log(fir.concat(se))
+
+        let con=[1,2,3,4,5]
+        console.log(con.length)
+        console.log(con.indexOf(5))
+        console.log(con.indexOf(2))
+        console.log(con.indexOf(7))
+
+        let colors=['blue','black','red','green']
+        let ind=colors.indexOf('black')
+        if(ind===-1){
+            console.log('this color is does not exist in this array')
+        }
+        else{
+            console.log('this color is exist in this array')
+        }
+
+
+        let value=[1,4,5,7,9,4,3,4,7,8,6]
+        console.log(value.lastIndexOf(4))
+        console.log(value.lastIndexOf(9))
+        console.log(value.lastIndexOf(0))
+
+        let val=[1,2,3,4,5]
+        console.log(val.includes(7))
+        console.log(val.includes(4))
+        console.log(world.includes('HTML'))
+
+        console.log(Array.isArray(value))
+        let a=100
+        console.log(Array.isArray(a))
+
+
+        let wor=['America','Paris','Canada','finland','South Korea','Germany']
+        console.log(wor.toString())
+
+        let su=[1,2,3,4,5,6]
+        console.log(su.join())
+
+        let wr=['America','Paris','Canada','finland','South Korea','Germany']
+        console.log(wr.join('#'))
+        console.log(wr.join(''))
+        console.log(wr.join(','))
+        console.log(wr.join(' '))
+
+        console.log(su.slice(0))
+        console.log(su.slice(1,4))
+        console.log(su.slice(1))
+
+        console.log(su.splice())
+        console.log(su.splice(0,2))
+        console.log(su.slice(1,8))
+
+        //28-08-20224 ARRAY METHODS
+
+        let anj =['item1','item2','item2']
+        anj.push('new one')
+        console.log(anj)
+
+        let k=[1,2,3,4,5]
+        k.push(6)
+        console.log(k)
+        
+
+        anj.pop()
+        console.log(anj)
+
+        let ko=[1,2,3,4,5,6]
+        ko.shift() //dlt the first item
+        console.log(ko)
+
+        ko.unshift(0)
+        console.log(ko) //add one item from the beginning
+
+        ko.reverse()
+        console.log(ko) //reverse array order 
+
+        
+        let kr=['America','Paris','Canada','finland','South Korea','Germany']
+        kr.sort()
+        console.log(kr)
+
+        let frnt=['HTML','CSS','REACT','JS']
+        let back=['NODE','EXPRESS','MONGODB']
+        let fullstack=[frnt,back]
+        console.log(fullstack)
+        
+        console.log(fullstack.length)
+        console.log(fullstack[0])
+        console.log(fullstack[1])
+
+
+    </script>
+</body>
+</html>

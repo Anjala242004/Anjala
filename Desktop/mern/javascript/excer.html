@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const url = 'https://restcountries.com/v3.1/all';
+
+/*fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(country => {
+      const name = country.name.common;
+      const capital = country.capital ? country.capital[0] : 'No capital'; 
+      const languages = country.languages ? Object.values(country.languages).join(', ') : 'No languages';
+      const population = country.population;
+      const area = country.area;
+      console.log(`Country: ${name}`);
+      console.log(`Capital: ${capital}`);
+      console.log(`Languages: ${languages}`);
+      console.log(`Population: ${population}`);
+      console.log(`Area: ${area} `);
+      
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching countries:', error);
+  });*/
+
+
+  const catsAPI = 'https://api.thecatapi.com/v1/breeds';
+
+const getCatNames = () => {
+  return fetch(catsAPI)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const catNames = data.map(cat => cat.name);
+      return catNames;
+    })
+    .catch(error => {
+      console.error('There was a problem with the fetch operation:', error);
+    });
+};
+
+getCatNames()
+  .then(catNames => {
+    console.log(catNames);
+  });
+
+
+    </script>
+</body>
+</html>

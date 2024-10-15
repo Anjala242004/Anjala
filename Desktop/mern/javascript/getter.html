@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(firstname,lastname,age,country,city)
+            {
+            this.firstname=firstname
+            this.lastname=lastname
+            this.age=age
+            this.country=country
+            this.city =city
+            this.score=0
+            this.skills=[]
+        }
+        getFullName(){
+            const fullname=this.firstname + ' ' + this.lastname
+            return fullname
+        }
+        get getScore(){
+            return this.score
+        }
+        get getSkills(){
+            return this.skills
+        }
+    }
+    const person1=new person('Anjana','Kr',250,'Finland','America')
+    const person2=new person('Anjali','kr',234,'france','barcelona')
+
+    console.log(person1.getScore)
+    console.log(person2.getScore)
+    console.log(person1.getSkills)
+    console.log(person2.getskills)
+    </script>
+</body>
+</html>

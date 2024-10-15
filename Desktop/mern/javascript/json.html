@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+          "users"[
+            {
+                "firstname":"Anjana",
+                "lastname":"kr",
+                "age":25,
+                "email":"anjans@gmail.com"
+            },
+            {
+                "firstName":"Alex",
+                "lastName":"James",
+                "age":25,
+                "email":"alex@alex.com"
+            }
+          ]
+        }
+        
+        //json convert JSON TO JAVASCRIPT OBJECT
+        let usertxt=`{
+        "users":[
+        {
+            "firstName":"ANJANA",
+            "lastName":"KR",
+            "age":20,
+            "email":"aMJAJb@aJJJ.com"
+        },
+        {
+            "firstName":"NANDANA",
+            "lastName":"SWAMI",
+            "age":20,
+            "email":"NAND@aSN.com"
+        }
+        ]
+        }`
+        let usersobj=JSON.parse(usertxt,4)
+        console.log(usersobj)
+
+        let user=`{
+        "users":[
+        {
+            "firstName":"ANJANA",
+            "lastName":"KR",
+            "age":20,
+            "email":"aMJAJb@aJJJ.com"
+        },
+        {
+            "firstName":"NANDANA",
+            "lastName":"SWAMI",
+            "age":20,
+            "email":"NAND@aSN.com"
+        }
+        ]
+        }`
+        const users=JSON.parse(user,(key,value)=>{
+            let newvalue=
+                 typeof value =='string' && key !='email' ? value.toUpperCase():value
+                 return newvalue
+        })
+         console.log(users)  
+         
+         
+         const main={
+            Anjana:{
+                email:'alex@alex.com',
+                skills:['HTML','CSS','JAVASCRIPT'],
+                age:20,
+                isLoggedIn:false,
+                points:30
+            },
+            Asab:{
+                email:'asab@asab.com',
+                skills:[
+                'HTML',
+                'CSS',
+                'JavaScript',
+                'Redux',
+                'MongoDB',
+                'Express',
+                'React',
+                'Node'
+                ],
+                age:24,
+                isLoggedIn:false,
+                points:50
+            }
+         }
+         const tsxt=JSON.stringify(users,4)
+         console.log(tsxt)
+        
+         const userrs= {
+                firstName: 'Asabeneh',
+                lastName: 'Yetayeh',
+                country: 'Finland',
+                city: 'Helsinki',
+                email: 'alex@alex.com',
+                skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Python'],
+                age: 250,
+                isLoggedIn: false,
+                points: 30
+                }
+            const txttt=JSON.stringify(userrs,['firstName','lastName','country','city','age'],4)
+            console.log(txttt)
+</script>
+</body>
+</html>

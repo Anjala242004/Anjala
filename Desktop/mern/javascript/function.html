@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* function functionname(){
+                \\codes
+           } 
+           functionname() */
+        
+
+           function square(){
+            let num=2
+            let squ =num*num
+            console.log(squ)
+           }
+           square()
+
+           function add()
+           {
+            let numone=10
+            let numtwo=20
+            let sum=numone+numtwo
+            console.log(sum)
+           }
+           add()
+
+           function print(){
+            let firstname='ANJANA'
+            let lastname='K R'
+            let spac=' '
+            let full=firstname+spac+lastname
+            console.log(full)
+           }
+           print()
+
+           function prin(){
+            let firstnam='ANJANA'
+            let lastnam='K R'
+            let spa=' '
+            let ful=firstnam+spa+lastnam
+            return ful
+        }
+           console.log(prin())
+
+           /* function functionname(param1){
+             \\code
+           }
+             functionname(param1)*/
+
+             function area(r){
+                let area=Math.PI * r * r
+                return area
+             }
+             console.log(area(10))
+
+
+
+             function squa(number){
+                return number*number
+             }console.log(squa(10))
+
+             /*function functionname(param1,param2){
+              //code
+             }functionname(param1,param2)*/
+
+             function sumtwonumbers(numone,numtwo){
+                console.log(numone+numtwo)
+             }sumtwonumbers(10,20)
+
+
+
+
+             function sumtwonumber(numon,numtw){
+                let s=numon+numtw
+                return s
+             }console.log(sumtwonumber(20,50))
+
+             function arrayvalues(arr){
+                let so=0;
+                for(i=0;i<arr.length;i++)
+                    {
+                        so=so+arr[i];
+                    }
+                return so
+             }let numberss=[1,2,3,4,5,6,7]
+            console.log(arrayvalues(numberss));
+
+
+           /* let ar = (r) => {
+                let ar=Math.PI * r * r
+                return ar
+             }
+             console.log(ar(10))
+
+            function sumallnums(){
+                console.log(arguments)
+            }sumallnums(1,2,3,4,5)*/
+
+            
+            //anonymous function
+
+           // let anoo=Function()
+           // {
+            //    console.log('I am an anonymous function and my value')
+            //}anoo()
+
+           /* let squ=function(n)
+            {
+                return n * n
+            }
+            console.log(squ(4))*/
+
+            (function(n) {
+                console.log(n * n)
+            })(6)
+
+
+            //arrow function
+           const squr=n=>
+           {
+            return n * n
+           }
+           console.log(square(5))
+
+           let changetouppercase = arr =>
+           {
+            let newarr =[]
+            for(let element of arr){
+                newarr.push(element.toUpperCase())
+            }
+            return newarr
+           }
+           let country=['india','south korea','china','iceland','denmark']
+           console.log(changetouppercase(country))
+
+           let printfullname=(firstname,lastname)=>{
+            return  `${firstname} ${lastname}`
+           }
+           console.log(printfullname('anjana','nandana'))
+
+           let printfull=(firstname,lastname)=>{
+          
+           }
+           console.log(printfull('anjana','nandana'))
+
+            
+           //function functionname(param=value){
+            //code
+            //}
+            //calling functions
+            //functionname
+            //functionname(arg)
+
+            function greet(name='anjana')
+            {
+                let msg=`${name}, welcome to 30 days`
+                return msg
+            }
+             console.log(greet())   
+             console.log(greet('anjana'))
+
+             function generatefullname(firstname='Anjana',lastname='kr'){
+                let space=' '
+                let fullname=firstname+space+lastname
+                return fullname
+             }
+             console.log(generatefullname())
+             console.log(generatefullname('devid','smith'))
+
+            function weight(mass,gravity=9.81){
+                let weight=mass*gravity+'N'
+                return weight
+            }
+            console.log('weight of an object in newton:',weight(100))
+            console.log('weight of an object in newton:',weight(100,1.65))
+
+            function calculating(birthyear,currentyear=2024)
+            {
+                let age=currentyear -birthyear
+                return age
+            }
+            console.log('Age:',calculating(2004))
+
+            ///arrow function
+            let  greetings = (name = 'anjana')=>{
+            
+                let msg=name +`, welcome to 30 days`
+                return msg
+            }
+             console.log(greetings())   
+             console.log(greetings('anjana'))
+
+             let generate=(firstname='Anjana',lastname='kr')=>{
+                let space=' '
+                let fullname=firstname+space+lastname
+                return fullname
+             }
+             console.log(generate())
+             console.log(generate('devid','smith'))
+
+             let calcu=(birthyear,currentyear=2024)=>
+            {
+                let age=currentyear -birthyear
+                return age
+            }
+            console.log('Age:',calcu(2003))
+
+            let weigh=(mass,gravity=9.5)=>{
+                let weigh=mass*gravity+'N'
+                return weigh
+            }
+            console.log('weight of an object in newton:',weigh(10))
+            console.log('weight of an object in newton:',weigh(10,1.65))
+    </script>
+</body>
+</html>

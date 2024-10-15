@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //regular exp is a small pro lang that helps to find pattern in data
+        //flags g pattern in whole text,i lowercase and uppercase,m multiline
+
+        let patt='better one'
+        let reg=new RegExp(patt)
+        console.log(reg)
+
+        let patter='Good'
+        let fl='gi'
+        let re=new RegExp(patter,fl)
+        console.log(re)
+
+        let rege= /love/gi
+        let regex=new RegExp('love','gi') 
+
+        //regexp object methods
+        //test
+        let str='i love javascript'
+        let patttern=/love/
+        let result = patttern.test(str)
+        console.log(result)
+
+        //match
+        let st='i love javascript'
+        let patern=/love/
+        let resul = st.match(patern)
+        console.log(resul)
+
+        let de='i love javascript'
+        let pate=/love/
+        let reul = de.match(pate)
+        console.log(reul)
+
+        //search
+        let string='how beautifull'
+        let mi=/how/g
+        let res=string.search(mi)
+        console.log(res)
+
+        //replace
+         let txt='Python is the most beautiful language that a human begin has ever created.\
+                  I recommend python for a first programming language'
+        matchrtxt=txt.replace(/python|python/,'Javascript')
+        console.log(matchrtxt)
+        
+        const txxt = '%I a%m te%%a%%che%r% a%n%d %% I l%o%ve te%ach%ing.\
+                    T%he%re i%s n%o%th%ing as m%ore r%ewarding a%s e%duc%at%i%ng a%n%d e%m%p%ow%er%ing \
+                    p%e%o%ple.\
+                    I fo%und te%a%ching m%ore i%n%t%er%%es%ting t%h%an any other %jobs.\
+                    D%o%es thi%s m%ot%iv%a%te %y%o%u to b%e a t%e%a%cher.'
+            matches =txxt.replace(/%/g,'')
+            console.log(matches)
+
+
+         //square bracket
+         let moi='[Gg]rapes'
+         let fr='Grapes and apple are fruits.An old cliche says an apple a day keeps the  doctor way has been replaced by a banana a day keeps the doctor far far away.'
+         let match=fr.match(moi)
+        console.log(match)
+
+        const pa = /[Aa]pple/g
+        const txtt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+        const matc = txtt.match(pa)
+        console.log(matc)  
+
+        const paa = /[Aa]pple|[Bb]anana/g
+        const txttt = 'Apple and banana are fruits. An old cliche says an apple a day a doctor way has been replaced by a banana a day keeps the doctor far far away. '
+        const mat = txttt.match(paa)
+        console.log(mat)  
+    
+        //Escape Character
+        const pattt = /\d/g 
+        const txxxt = 'This regular expression example was made in January 12,  2020.'
+        const mathes = txxxt. match(pattt)
+
+        console.log(mathes)  
+
+
+        
+    </script>
+</body>
+</html>

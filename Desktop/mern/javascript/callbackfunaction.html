@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Synchronous callback function 
+        function greet(name,callback){
+            console.log('hello' + name);
+            callback();
+        }
+        function sayGoodbye(){
+            console.log('Goodbye!');
+        }
+        greet('anjana',sayGoodbye);
+
+        //asynchronous callback function
+        /*function fetchdata(callback)
+        {
+            setTimeout(function(){
+                console.log('Data fetched from server');
+                callback();
+            },5000)
+        }
+        function processdata(){
+
+            console.log('processing data.....');
+
+        }
+        fetchdata(processdata)*/
+
+
+        let numbers=[1,2,3,4,5,6]
+        let double=numbers.map(function(num){
+            return num*2;
+        });
+        console.log(double)
+
+
+        function fetch(callback){
+            setTimeout(function(){
+                let error=false;
+                if(error){
+                    callback('error fetching data',null);
+                }else{
+                    callback(null,'data fetched succesfully');
+                }
+                
+            }, 2000);
+        }
+        function procesdata(error,data){
+            if (error){
+                console.log(error);
+            }else{
+                console.log(data);
+            }
+        }
+        fetch(procesdata)
+    </script>
+</body>
+</html>

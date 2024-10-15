@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let rec={
+            length:20,
+            width:20
+        }
+        console.log(rec)
+
+        let person={
+            firstname:'Anjana',
+            lastname:'kr',
+            age:20,
+            country:'India',
+            city:'Chelakkara',
+            skills:['HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React',
+                        'Node',
+                        'MongoDB',
+                        'Python',
+                        'D3.js'
+                    ],
+            isMarried:false
+        }
+        console.log(person)
+
+        let pers={
+            firstname:'Anjana',
+            lastname:'kr',
+            age:20,
+            country:'India',
+            city:'Chelakkara',
+            skills:['HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React',
+                        'Node',
+                        'MongoDB',
+                        'Python',
+                        'D3.js'
+                    ],
+            getfullname:function(){
+                return `${this.firstname}${this.lastname}`
+            },
+            'phone number':'7736765455'
+        }
+        console.log(pers.firstname)
+        console.log(pers.lastname)
+        console.log(pers.age)
+        console.log(pers.getfullname())
+        console.log(person['age'])*/
+
+        let per={
+            firstname:'Anjana',
+            lastname:'kr',
+            age:20,
+            country:'India',
+            city:'Chelakkara',
+            skills:['HTML',
+                        'CSS',
+                        'JavaScript',
+                        'React',
+                        'Node',
+                        'MongoDB',
+                        'Python',
+                        'D3.js'
+                    ],
+            getfullname: function() {
+                return `${this.firstname}${this.lastname}`
+            }
+        }
+        per.nationality='inidan'
+        per.country='India'
+        per.title='student'
+        per.skills.push('UI/UX')
+        per.skills.push('java')
+        per.isMarried=false
+
+        per.getper = function() 
+        {
+            let skil=this.skills.splice(0,this.skills.length - 1).join(', ')
+            let lastSkill = this.skills.splice(this.skills.length - 1)[0]
+            let skills=`${skil}, and ${lastSkill}`
+            let fullName = this.getfullname()
+            let statement=`${fullName} is a ${this.title}. \n she lives in ${this.country}.\n she teaches ${skills}.`
+            return  statement
+        }
+        console.log(per)
+        console.log(per.getper())
+
+
+    </script>
+</body>
+</html>

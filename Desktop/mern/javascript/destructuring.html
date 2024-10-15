@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers =[1,2,3]
+        let [numOne, numTwo, numThree]=numbers
+        console.log(numOne,numTwo,numThree)
+
+        const names = ['Asabeneh', 'Brook', 'David', 'John']
+        let [firstPerson, secondPerson, thirdPerson, fourthPerson] = names
+
+        console.log(firstPerson, secondPerson,thirdPerson, fourthPerson)
+
+        const fullstack =[['HTML','CSS','JS','REACT'],
+                         ['NODE','EXPRESS','MONGODB']]
+                         const[frontend,backend]=fullstack
+                         console.log(frontend)
+                         console.log(backend)
+
+       const number = [1, 2, 3]
+       let [numOn, , numThre] = numbers //2 is omitted
+        console.log(numOn, numThre)
+
+        const name = ['Asabeneh', 'Brook', 'David', 'John']
+         let [, secondPerso, , fourthPerso] = names // first and third person is omitted
+
+        console.log(secondPerso, fourthPerso)
+
+        const nam=[undefined,'brook','david']
+        let[firstpersin='Anjana',
+            secondper,
+            thirdpers,
+            fourthper='john']=nam
+        console.log(firstpersin,secondper,thirdpers,fourthper)
+
+        const nums=[1,2,3,4,5,6,7,8,9,10]
+        let[num1,num2,num3,...rest]=nums
+        console.log(num1,num2,num3)
+        console.log(rest )
+</body>
+</html>

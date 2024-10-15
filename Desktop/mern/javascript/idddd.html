@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Query Selector by ID</title>
+</head>
+<body>
+    <p id="para1">This is the first paragraph.</p>
+    <p id="para2">This is the second paragraph.</p>
+    <p id="para3">This is the third paragraph.</p>
+    <p id="para4">This is the fourth paragraph.</p>
+
+    <script>
+        const firstParagraph = document.querySelector('#para1');
+        const secondParagraph = document.querySelector('#para2');
+        const thirdParagraph = document.querySelector('#para3');
+        const fourthParagraph = document.querySelector('#para4');
+
+  
+        console.log(firstParagraph);
+        console.log(secondParagraph);
+        console.log(thirdParagraph);
+        console.log(fourthParagraph);
+    </script>
+</body>
+</html>

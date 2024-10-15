@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* const  dopromise=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                const skills =['HTML','CSS','JS']
+                if(skills.length>585){
+                    resolve(skills)
+                }else{
+                    reject('something wrong has happened')
+                }
+            },2000 );
+        })
+        dopromise.then(result=>{
+            console.log(result)
+        })
+        .catch(error=>console.log(error))*/
+        const  dopromise=new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                const skills =['HTML','CSS','JS']
+                if(skills.includes('Node')){
+                    resolve('fullstack developer')
+                }else{
+                    reject('something wrong has happened')
+                }
+            },2000 );
+        })
+        dopromise.then(result=>{
+            console.log(result)
+        })
+        .catch(error=>console.log(error))
+
+        const dosomething=callback=>{
+            setTimeout(()=>{
+                const skills=['HTML','CSS','js']
+                callback('it did not go well',skills)
+            },2000)
+        }
+        const callback=(err,result)=>{
+            if(err){
+                return console.log(err)
+            }
+            return console.log(result)
+        }
+        dosomething(callback)
+        const dosomething=callback=>{
+            setTimeout(()=>{
+                const skills=['HTML','CSS','js']
+                callback('it did not go well',skills)
+            },2000)
+        }
+        const callback=(err,result)=>{
+            if(err){
+                return console.log(err)
+            }
+            return console.log(result)
+        }
+        dosomething(callback) 
+        const dosomethinggg=callback=>{
+            setTimeout(()=>{
+                const skills=['HTML','CSS','js']
+                callback(false,skills)
+            },2000)
+        }
+        dosomething=(err,result)=>{
+            if(err){
+                return console.log(err)
+            }
+            return console.log(result)
+        }
+        dosomething(callback)
+    </script>
+</body>
+</html>
