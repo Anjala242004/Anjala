@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: black;
+        }
+        .row1{
+            position: relative;
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            background-image: url(premium_photo-1667222129504-312ef755e314.avif);
+            backface-visibility: visible;
+            background-size:cover ;
+            background-attachment: scroll;
+            
+        }
+        .col1 h1{
+            color:rgb(9, 7, 15);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-right: 600px;
+            margin-top: 10px;
+            letter-spacing:3px;
+            font-weight: 4px;
+            font-size:50px;
+        }
+        #container{
+            width:100%;
+            height:100px;
+            position: fixed;
+            top:0px;
+            background: white;
+    
+        }
+        #navbar{
+            display: flex;
+            justify-content:space-evenly;
+
+        }
+        #navbar h1{
+            margin: 20px 10px;
+            color: rgb(35, 22, 73);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 20px;
+            font-size:50px;
+        }
+        #navbar h1:hover{
+            text-shadow: 1px 1px 1px wheat;
+            color: rgb(198, 159, 108);
+        }
+        #container1{
+            width: 100%;
+            height: 60px;
+            position: sticky;
+            top:0px;
+            background:#250d6e ;
+            
+        }
+        #navbar1{
+            display: flex;
+            justify-content:space-evenly;
+        }
+        #sec{
+            display: flex;
+            background-color: #250d6e;
+            width: 100%;
+            height:60px;
+        }
+        #sec ul{
+            display: flex;
+        }
+        #sec ul li{
+            margin: 20px 10px;
+            list-style: none;
+            padding: 5px;
+            color: rgb(246, 240, 240);
+          
+            text-align: left;
+        }
+        #sec ul li:hover{
+            text-shadow: 1px 1px 1px wheat;
+            color: rgb(198, 159, 108);
+        }
+        .main{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            background-color: #eeecf5;
+            height: 300px;
+        }
+        .box1{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(232, 235, 239);
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+        }
+        .box2{
+            height: 200px;
+            width: 400px;
+            background-color: #250d6e;
+            background-image:url(photo-1444703686981-a3abbc4d4fe3.avif) ;
+            padding: 20px;
+            
+        }
+        .box3{
+            height: 200px;
+            width: 400px;
+            background-color: rgb(232, 235, 239);
+           
+            padding: 20px;
+        }
+        .main1{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            height: 200px;
+            width: 1200px;
+            padding: 50px;
+        }
+        .b1{
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+            color:#eeecf5;
+        }
+        .b2{
+            height: 400px;
+            width: 300px;
+            padding: 20px;
+            color: #eeecf5;
+        }
+        .b3{
+            height: 400px;
+            width: 300px;
+            padding: 20px;
+            color: #eeecf5;
+        }
+        .b4{
+            height: 400px;
+            width: 300px;
+            padding: 20px;
+            color: #eeecf5;
+        }
+        .main2{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            background-color:white;
+            height: 300px;
+        }
+        .bo1{
+            height: 250px;
+            width: 600px;
+            background-color:white;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            text-align: left;
+        }
+        .bo2{
+            height: 250px;
+            width: 600px;
+            background-color:white;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            text-align: left;
+        }
+        .bo3{
+            height: 250px;
+            width: 600px;
+            background-color: white;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            text-align: left;
+        }
+        .main3{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            background-color:rgb(232, 235, 239);
+            height: 400px;
+        }
+        .bb1{
+            height: 350px;
+            width: 200px;
+            background-color: #250d6e;
+            padding: 20px;
+        }
+        .bb2{
+            height: 350px;
+            width: 200px;
+            background-color:#250d6e;
+            padding: 20px;
+        }
+        .bb3{
+            height: 350px;
+            width: 200px;
+            background-color: #250d6e;
+            padding: 20px;
+        }
+        .bb4{
+            height: 350px;
+            width: 200px;
+            background-color: #250d6e;
+            padding: 20px;
+        }
+        .main4{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            height: 200px;
+        }
+        .bn1{
+            color:#250d6e;
+            padding: 20px;
+        }
+        .bn2{
+            color:#250d6e;
+            padding: 20px;
+        }
+        .bn3{
+            color:#250d6e;
+            padding: 20px;
+        }
+        .bn4{
+            color:#250d6e;
+            padding: 20px;
+        
+        }
+        .main5{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 20px;
+            height: 100px;
+            background-color: #eeecf5;
+        }
+        .bx1{
+            
+            padding: 45px;
+        }
+        .bx2{
+            padding: 20px;
+        }
+        .bx3{
+            padding: 20px;
+        }
+        .bx4{
+            padding: 20px;
+        }
+        .bx5{
+            padding: 45px;
+        }
+        .main6{
+            height: 200vh;
+            display: flex;
+            flex-direction: row;
+            gap:50px;
+            text-align: center;
+            justify-content: center;
+            padding-top: 0px;
+            height: 250px;
+            background-color: #250d6e;
+        }
+        .ma1{
+            
+            color: #eeecf5;
+            height: 200px;
+        
+        }
+        .ma2{
+           color: #eeecf5;
+           height: 200px;
+        }
+        .ma3{
+            color: #eeecf5;
+            height: 200px;
+        }
+        .ma4{
+            color: #eeecf5;
+            height: 200px;
+        }
+        </style>
+    <div class="row1">
+        <div class="col1">
+        <h1>Communication is the key <br>for any Global Bussiness</h1><br><br>
+        <button style="color: rgb(17, 43, 90);background-color: white;border: 0ch;border-color: white;padding:20px; font-weight: 300;">ABOUT US</button><span style="padding: 10px;"></span>
+        <button style="color: white;background-color: rgb(13, 13, 118); padding: 20px; border-color: rgb(13, 13, 118);font-weight: 300;">OUR SERVICES</button>
+        </div>
+    </div>
+    <header>
+        <div id="container">
+            <nav id="navbar">
+                <i class="fa-solid fa-rainbow" style="color: #250d6e;padding:30px; "></i>
+
+                <h1>Consulan</h1><span style="padding:50px;"></span>
+                <i class="fa-solid fa-phone" style="color: #250d6e;padding: 30px;"></i>
+                <p style="padding: 20px;">001-1234-88888<br>info-byno@gmail.com</p>
+                <i class="fa-solid fa-location-dot" style="color: #250d6e;padding: 30px;"></i>
+                <p style="padding: 20px;">40 Barla Street 133/2<br>NewYork City,US</p>
+                <i class="fa-regular fa-clock" style="color: #250d6e;padding: 30px;"></i>
+                <p style="padding: 20px;">8:00 AM - 6:00 PM<br>Monday to Saturday</p>
+            </nav>
+            <div id="sec">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <LI>SERVICES</LI>
+                    <li>PAGES</li>
+                    <li>PROJECTS</li>
+                    <li>MEWS</li>
+                    <li>SHOP</li>
+                    <li>CONTACT</li><span style="padding:250px;"></span>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #eeecf5;padding:20px;"></i><span style="padding:5px;"></span>
+                    <i class="fa-solid fa-shop" style="color: #eeecf5;padding: 20px;"></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div style="background-color: #250d6e;">
+        <p style="color: #eeecf5;font-weight:300;font-size:20px;">Would you like to speak to one of our financial advisers?</p>
+        <p style="color: #eeecf5;font-size:medium;">Just submit your contact details and we'll be in touch shortly.<span style="padding: 400px;"></span><button style="padding: 15px;font-size:15px;font-weight: bold;color: #eeecf5;background-color: rgb(23, 23, 193);">GET A QUOTE</button></p>
+    </div>
+
+
+    <div style="background-color: #eeecf5; padding: 50px;">
+        <h2 style="text-align: center;font-size:30px;color: #250d6e;font-family: 'Times New Roman', Times, serif;padding: 20px;">About Us</h2>
+        <p style="text-align: center;font-size:20px;color: #2d1084;font-family: 'Times New Roman', Times, serif;">We help you in creating a financial strategy that represents your personality.Getting yo know you is financial advisor's primary goal.-An apporach centered around your life's priorities.it's time for a financial strategy that puts your needs and priorities front and center.</p>
+    </div>
+    <div class="main">
+        <div class="box1">
+            <i class="fa-solid fa-dollar-sign" style="color: #250d6e;"></i>
+            <h4 style="color: #250d6e;padding: 10px;font-size:20px;">Financial Projections</h4>
+            <p style="color: #250d6e;padding:10px;">Financial projection and analysis is an internal process that helps a company explain their most recent earnings and growth (or lack thereof)</p>
+        </div>
+        <div class="box2">
+           
+            <i class="fa-solid fa-book-open-reader" style="color: #fcfcfd;"></i>
+            <h4 style="color: #eeecf5;padding: 10px;font-size:20px;">Strategy & Consulting</h4>
+            <p style="color: #eeecf5;padding:10px;">Strategy consultants advise organisations on high-level decisions in an unbiased fashion, using deep industry knowledge to deliver the best results. It is a type of Management Consulting, which generally implies advising at the highest-level of a company.</p>
+        </div>
+        <div class="box3">
+            <i class="fa-solid fa-headphones" style="color:#250d6e;"></i>
+            <h4 style="color: #250d6e;padding:10px;font-size:20px;">Online Consulting</h4>
+            <p style="color: #250d6e;padding:10px;">An online consultant is a professional with special expertise who offers guidance to clients over digital platforms. This can be a great career path for people who have extensive knowledge of a particular business or market and who enjoy working from home.</p>
+        </div>
+        </div>
+    </div>
+    <div style="background-image: url(blueskyjpg.jpg);background-repeat: no-repeat;backface-visibility: visible;background-size:cover;height:300px;padding: 0px;">
+        <H2 style="text-align: center;font-size: larger;color: #eeecf5;padding: 20px;">We advise you,you call the right decision!</H2>
+        <p style="text-align: center;font-size: medium;color: #eeecf5;">We help entrepreneurs get their act together before they talk investors.</p>
+        <div class="main1">
+            <div class="b1">
+                <i class="fa-solid fa-circle-half-stroke" style="color: #eeecf5;"></i>
+                <p style="font-size:50px;font-weight: 400;color: #eeecf5;">90</p>
+                <p style="font-size:  medium;color: #eeecf5;">Companies Consulted</p>
+            </div>
+            <div class="b2">
+                <i class="fa-solid fa-headset" style="color: #eeecf5;"></i>
+                <p style="font-size:50px;font-weight: 400;color: #eeecf5;">120</p>
+                <p style="font-size: medium;color: #eeecf5;">Consultants</p>
+            </div>
+            <div class="b3">
+                <i class="fa-solid fa-book-open" style="color: #eeecf5;"></i>
+                <p style="font-size:50px;font-weight: 400;color: #eeecf5;">50</p>
+                <p style="font-size: medium;color: #eeecf5;">Awards Winning</p>
+            </div>
+            <div class="b4">
+                <i class="fa-solid fa-heart-pulse" style="color: #eeecf5;"></i>
+                <p style="font-size:50px;font-weight: 400;color: #eeecf5;">240</p>
+                <p style="font-size: medium;color: #eeecf5;">Satisfied Customers</p>
+            </div>
+    </div>
+    <div>
+        <h2 style="padding: 0px; text-align: center;font-size:30px;color:#250d6e;font-family: 'Times New Roman', Times, serif;">Our Industries</h2>
+    </div>
+    <div class="main2">
+        <div class="bo1">
+            <h3 style="color:#2d1084;"><i class="fa-solid fa-hands-holding-circle" style="color: #250d6e;"></i><span style="padding: 10px;"></span> Corporate Finance</h3><br>
+            <p style="color: #2d1084;">Corporate finance is a branch of finance that focuses on how corporations approach capital structuring, funding sources, investments, and accounting decisions.</p><br>
+            <h3 style="color:#2d1084;"><i class="fa-solid fa-land-mine-on" style="color: #250d6e;"></i><span style="padding: 10px;"></span> Strategic Communications</h3><br>
+            <p style="color:#2d1084;">Strategic communications is a specialized approach to distributing and receiving information. It means communicating the best message, through the correct channels, to the right people</p>
+        </div>
+        <div class="bo2">
+            <h3 style="color:#2d1084;"><i class="fa-solid fa-chart-simple" style="color: #250d6e;"></i> <span style="padding: 10px;"></span> Economic Consulting</h3><br>
+            <P style="color:#2d1084;">Economic consulting consists of providing economic expertise in a variety of areas, including but not limited to antitrust; bankruptcy; energy; finance; healthcare; </P><br>
+            <h3 style="color:#2d1084;"><i class="fa-solid fa-tv" style="color: #250d6e;"></i> <span style="padding: 10px;"></span>Technology Consulting</h3><br>
+            <p style="color:#2d1084;"> A technical or information technology consultant brings specific expertise to the design, instruction, or operations of technical solutions. Some technical consultants may work</p>
+        </div>
+        <div class="bo3">
+            <h3 style="color:#2d1084;"><i class="fa-regular fa-bell" style="color: #250d6e;"></i><span style="padding: 10px;"></span>Forensic & Litigation</h3><br>
+            <p style="color:#2d1084;">Forensic and litigation consulting is a broad term that encompasses various types of services that forensic accountants may provide in the context of legal disputes or investigations. </p><br>
+            <h3 style="color:#2d1084;"><i class="fa-solid fa-house-medical-circle-check" style="color: #250d6e;"></i><span style="padding: 10px;"></span>Healthcare Consulting</h3><br>
+            <p style="color:#2d1084;">Health care consultants help health care providers and institutions to grow and develop their services, while also considering the best outcomes for patients and taking account of regulations</p>
+        </div>
+    </div>
+
+    <div style="background-color:rgb(232, 235, 239) ;">
+        <h2 style="font-size:30px;color: #250d6e;text-align: center;padding: 20px;">Meet Our Team </h2>
+        <p style="color: #2d1084;font-size: 10px;text-align: center;font-size: 20px;">We are here to Acelerate your business and help you find the way</p>
+    </div>
+    <div class="main3">
+        <div class="bb1">
+            <img src="man.jpg.avif" height="300px" width="200px">
+            <h2 style="color: #eeecf5;">Jackson Nash</h2>
+            <p style="color: #eeecf5;">Tax Advice</p>
+
+        </div>
+        <div class="bb2">
+            <img src="woman.webp" height="300px" width="200px">
+            <h2 style="color: #eeecf5;">Natasha</h2>
+            <p style="color: #eeecf5;">business Planner</p>
+        </div>
+        <div class="bb3">
+            <img src="istockphoto-1187559382-612x612.webp" height="300px" width="200px">
+            <p style="padding:20px;"><i class="fa-brands fa-twitter" style="color: #eeecf5;"></i><span style="padding: 10px;"></span><i class="fa-brands fa-facebook" style="color: #eeecf5;"></i><span style="padding: 10px;"></span><i class="fa-brands fa-instagram" style="color:#eeecf5;"></i></p>
+            
+        </div>
+        <div class="bb4">
+            <img src="istockphoto-1211281457-612x612.webp" height="300px" width="200px">
+            <h2 style="color: #eeecf5;">Nancy Mike</h2>
+            <p style="color: #eeecf5;">Financer</p>
+        </div>
+    </div>
+    <div style="background-image: url(headphone.jpg);background-repeat: no-repeat;backface-visibility: visible;background-size:cover;height:400px;padding: 0px;background-color:rgb(109, 27, 185);">
+        <h1 style="text-align: center; font-size: 40px;padding: 30px;color: #250d6e;">Request a call back</h1>
+        <p style="text-align: center;font-size: 20px;color: #250d6e;padding: 20px;">Would you like to speak to one of our financial advisers? Just submit your contact details and we will be in touch shortly.You can also email us if you prefer that type of communication. </p>
+        <div class="main4">
+            <div class="bn1">
+                <input list="browsers" name="browser" id="browser" value="How can we help.*" style="color: #250d6e;padding: 10px;border-color: #2d1084;font-size: large;">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                     </datalist>
+            </div>
+            <div class="bn2" >
+                <input list="browsers" name="browser" id="browser" value="Your name?" style="color: #250d6e;padding: 10px;border-color: #2d1084;font-size: large;">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                     </datalist>
+            </div>
+            <div class="bn3">
+                <input list="browsers" name="browser" id="browser" value="Phone number?" style="color: #250d6e;padding: 10px;border-color: #2d1084;font-size: large;">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                     </datalist>
+            </div>
+            <div class="bn4">
+                <input list="browsers" name="browser" id="browser" value="Submit >" style="color: #0e0909;padding: 10px;border-color: #0f0b1c;background-color: rgb(229, 229, 234); font-size: large;">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                     </datalist>
+            </div>
+        </div>
+    </div>
+    <div class="main5">
+        <div class="bx1">
+            <h2 style="color:#250d6e;">Prime <i class="fa-solid fa-brain"style="color: #250d6e;"></i></h2>
+        </div>
+        <div class="bx2">
+            <h2 style="color: #250d6e;"><i class="fa-solid fa-mask"style="color: #250d6e;"></i><br>Duo</h2>
+        </div>
+        <div class="bx3">
+            <h2 style="color: #250d6e;"><i class="fa-solid fa-certificate"style="color: #250d6e;"></i><br>Tech Consulting</h2>
+        </div>
+        <div class="bx4">
+            <h2 style="color: #250d6e;"><i class="fa-solid fa-fan"style="color: #250d6e;"></i><br>INGERIS</h2>
+        </div>
+        <div class="bx5">
+            <h2 style="color: #250d6e;">AMIGOSS</h2>
+        </div>
+    </div>
+
+    <div style="background-color:#250d6e">
+        <h1 style="font-family: 'Times New Roman', Times, serif; text-align: center;color: #eeecf5;height: 70px;padding:10px;"><i class="fa-solid fa-hand-point-right" style="color: #eeecf5;"></i>Click on the image to download</h1>
+        <div class="main6">
+            <div  class="ma1">
+                <h1 style="color: #eeecf5;"><i class="fa-solid fa-rainbow" style="color: #250d6e; "></i>Consulan</h1><br>
+                <P style="color: #eeecf5;">Lorem ipsum dolor sit amet consector adiplacing elit,sed do cunsumed temper incididunt ut labore</P><br>
+                <p style="color: #eeecf5;"><i class="fa-solid fa-location-dot" style="color: #eeecf5;"></i>  40 Barfa street,NewYork City,US</p><br>
+                <p style="color: #eeecf5;"><i class="fa-solid fa-phone" style="color:#eeecf5;"></i>  001-1234-88888</p><br>
+                <p style="color: #eeecf5;"><i class="fa-brands fa-shopify" style="color:#eeecf5;"></i>  info-deercreative@gmail.com</p>
+            </div>
+            <div class="ma2">
+                <h1 style="color: #eeecf5;">Our Links</h1><br>
+                <p style="color: #eeecf5;">Home  </p>
+                <p style="color: #eeecf5;">About Us </p>
+                <p style="color: #eeecf5;">Services  </p>
+                <p style="color: #eeecf5;">Pages   </p>
+                <p style="color: #eeecf5;">Projects </p>
+            </div>
+            <div class="ma3">
+                <h1 style="color: #eeecf5;">Recent News</h1><br>
+                <p style="color: #eeecf5;">Colombia Gets a Business Makeover</p>
+                <p style="color: #eeecf5;">25 AUG 2017</p><br>
+                <P style="color: #eeecf5;">Countimg the cost of Delay & Disruption</P>
+                <p style="color: #eeecf5;">20 AUG 2017</p>
+            </div>
+            <div class="ma4">
+                <h1 style="color: #eeecf5;">Newsletter</h1><br>
+                <p style="color: #eeecf5;">Subscribe our newsletter get notification about new updates,etc..</p><br>
+                <button style="background-color: darkslategray; padding: 10px;">Enter Your Email</button><br><br>
+                <button style="background-color: #2030da; padding: 10px;">SUBSCRIBE</button>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
